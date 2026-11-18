@@ -168,5 +168,4 @@ docker inspect --format '{{json .Mounts}}' <container>
 docker service inspect --format 'Ports: {{json .Spec.EndpointSpec.Ports}} | Constraints: {{json .Spec.TaskTemplate.Placement.Constraints}}' <service>
 
 # 5.Check the webpage is working on containers.
-docker service logs --tail 25 microservice-stack_client
-
+docker service logs --tail 25 docker-microservice_client
