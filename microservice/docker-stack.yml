@@ -1,0 +1,11 @@
+services:
+ server:
+  image: akmi/microservice-server:v1
+  deploy:
+   replicas: 3
+ client:
+  image: akmi/microservice-client:v1
+  deploy:
+   replicas: 2
+  ports:
+  - "8091:8091"
